@@ -1,4 +1,4 @@
-/*package fr.eni.ProjetSiteEncheres.dal;
+package fr.eni.ProjetSiteEncheres.dal;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -53,14 +53,6 @@ public class ListeUtilisateurDAOJdbcImpl implements ListeUtilisateurDAO {
 					rs.close();
 					pstmt.close();
 				}
-				//if(listeUtilisateur.getArticles().size()==1)
-				//{
-				//	pstmt = cnx.prepareStatement(INSERT_ARTICLE);
-				//	pstmt.setString(1, listeCourse.getArticles().get(0).getNom());
-				//	pstmt.setInt(2, listeCourse.getId());
-				//	pstmt.executeUpdate();
-				//	pstmt.close();
-				//}
 				cnx.commit();
 			}
 			catch(Exception e)
@@ -133,11 +125,9 @@ public class ListeUtilisateurDAOJdbcImpl implements ListeUtilisateurDAO {
 			throw businessException;
 		}
 		
-		return liste
-;
+		return liste;
 	}
 
 	
 	
 }
-*/
